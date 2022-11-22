@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booster</title>
+    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="assets_boy/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets_boy/css/owl.theme.default.css">
+
+
+    <script src="assets_boy/jquery/jquery.min.js"></script>
+    <script src="assets_boy/js/owl.carousel.min.js"></script>
+    
+    <link rel="shortcut icon" href="gambar/logo3.png">
+
+    
+
+    <style>
+        /* /tombol keatas/ */
+        html {scroll-behavior:smooth;}
+        .ignielToTop {width:40px; height:40px; position:fixed; bottom:30px; right: 35px; z-index:99; cursor:pointer; border-radius:0px; transition:all .0.1s; background: grey  url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;}
+        .ignielToTop:hover {background: #0f345e  url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;}
+        /* /tombol keatas/ */
+
+        body {
+            background-color: white;
+        }
+
+        .welcome {
+            font-size: 40px;
+            margin-top: 60px;
+            /* z-index: 9999; */
+        }
+        .superhero {
+            font-size: 15px !important;
+            margin-top: 40px !important;
+            color: white !important; 
+            border: 1px solid white !important;
+
+            box-shadow: inset 0 0 0 0 white !important;
+            transition: ease-out 0.3s !important;
+        }
+        ,.superhero:hover {
+            color: #0f345e !important;
+            border: 1px solid #0f345e !important;
+            background-color: black !important;
+
+            box-shadow: inset 220px 0 0 0 white !important;
+
+
+        }
+
+        .superhero1 {
+            font-size: 15px !important;
+            margin-top: 40px !important;
+            margin-bottom: 40px !important;
+
+            color: white !important; 
+            border: 1px solid white !important;
+
+            box-shadow: inset 0 0 0 0 white !important;
+            transition: ease-out 0.3s !important;
+        }
+        ,.superhero1:hover {
+            color: #0f345e !important;
+            border: 1px solid #0f345e !important;
+            background-color: black !important;
+
+            box-shadow: inset 160px 0 0 0 white !important;
+
+
+        }
+        .justice {
+            font-size: 10px;
+            color: white; 
+            margin-top: -30px;
+        }
+
+        
+        .iklan:hover {
+            cursor: pointer;
+        }
+        .navbar {
+            border: none;
+            /* border-bottom: 1px solid gray; */
+            background-color: white;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        }
+        .promosi {
+            font-size: 10px;
+            color: white; 
+            margin-top: 150px;
+        }
+        .coba {
+            font-size: 10px;
+            color: white; 
+            margin-top: 180px;
+        }
+
+        .paketan {
+            font-size: 10px;
+            color: white; 
+            margin-top: 30px;
+        }
+
+        .panel-default {
+            transition: transform .2s;
+        }
+        .panel-default:hover {
+            background-color: #0f345e !important;
+            color: white;
+            cursor: pointer;
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+        .atas {
+            color: #0f345e !important;
+        }
+        .dropdown-toggle {
+            color: #0f345e !important;
+        }
+        .price {
+            transition: transform .2s;
+        }
+        .price:hover {
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+
+        .login1 {
+            border: 1px solid #0f345e !important;
+        }
+        .login1:hover {
+            background-color: #d43a1f !important;
+            color: white !important;
+            border: 1px solid #d43a1f !important;
+        }
+
+
+
+
+
+        .login2 {
+            border: 1px solid #0f345e !important;
+        }
+        .login2:hover {
+            background-color: #0f345e !important;
+            color: white !important;
+            border: 1px solid white !important;
+        }
+
+
+
+        span.badge.alpin {
+
+        /* margin-top: 30px; */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        color: white;
+        background-color: #d43a1f;
+        border-radius: 0px;
+        margin-bottom: 63px;
+        border: 1px solid #d43a1f ;
+
+        box-shadow: inset 0 0 0 0 white;
+        transition: ease-out 0.3s;
+        /* border-radius: 20px; */
+
+        }
+
+        span.badge.alpin:hover {
+
+        /* margin-top: 30px; */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        color: #0f345e;
+        /*background-color: white;*/
+        background-color: black;
+        border-radius: 0px;
+        margin-bottom: 63px;
+        border:  1px solid #0f345e ;
+        cursor: pointer;
+
+        box-shadow: inset 160px 0 0 0 white;
+        /* border-radius: 20px; */
+
+
+        }
+
+        span.badge.satya {
+
+        /* margin-top: 30px; */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        color: white;
+        background-color: #d43a1f;
+        border-radius: 0px;
+        /*margin-bottom: 63px;*/
+        border: 1px solid #d43a1f ;
+
+        box-shadow: inset 0 0 0 0 white;
+        transition: ease-out 0.3s;
+        /* border-radius: 20px; */
+
+        }
+
+        span.badge.satya:hover {
+
+        /* margin-top: 30px; */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        color: #0f345e;
+        /*background-color: white;*/
+        background-color: black;
+        border-radius: 0px;
+        /*margin-bottom: 63px;*/
+        border:  1px solid #0f345e ;
+        cursor: pointer;
+
+        box-shadow: inset 160px 0 0 0 white;
+        /* border-radius: 20px; */
+
+
+        }
+
+        /* .panel-primary {
+            padding-top: 25px;
+        } */
+
+        .panel-primary {
+            padding-top: 25px;
+            align-self: flex-end;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom;
+            cursor: pointer;
+        }
+        .panel-primary:hover {
+            cursor: pointer;
+            padding-top: 25px;
+            animation-name: bounce;
+            animation-timing-function: ease;
+            border-bottom: 5px solid #0f345e;
+        }
+        @keyframes bounce {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-5px); }
+        100% { transform: translateY(0); }
+        }
+
+        .poin:hover {
+            background-color: #d43a1f !important;
+            font-size: 17px;
+        }
+
+        .map {
+            transition: transform .2s;
+        }
+        .map:hover {
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .layang {
+            border: 1px solid gray !important;
+            /* border-radius: 50px; */
+        }
+        .layang:hover {
+            border: 1px solid #0f345e !important;
+        }
+
+        .evo {
+            color: #0f345e !important;
+        }
+        .evo:hover {
+            color: white !important;
+            background-color: #0f345e !important;
+        }
+
+
+
+
+
+
+        .container.maze {
+            border-radius: 0px;
+            padding-top: 42px;
+            padding-bottom: 42px;
+            padding-right: 13px;
+            padding-left: 13px;
+            /*position: fixed;*/
+            /*background-color: white !important;*/
+            /*border: 1px solid #F8F9FA !important;*/
+
+            position: relative;
+            bottom: -247px;
+            left: 0px;
+            background-color: #E0DCD3 !important;
+            border: 0;
+            box-shadow: none;
+
+
+            color: white  !important; 
+            z-index: 2;
+
+        }
+        .row.ulin {
+            padding-right: 30px;
+            margin-right: 30px;
+        }
+
+        h4.bubur {
+            font-family: Poppins, sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 46.8px;
+            color: rgb(255, 255, 255);
+            padding-left: 50px;
+        }
+
+        h4.rianti {
+            font-family: "Nunito Sans", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28.8px;
+            color: rgb(255, 255, 255);
+            padding-left: 50px;
+        }
+
+        
+
+        span.badge.nabila {
+
+            margin-top: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            color: white;
+            background-color: #0F345E;
+            border-radius: 0px;
+            margin-bottom: 21px;
+            border: 1px solid white ;
+
+            box-shadow: inset 0 0 0 0 black;
+            transition: ease-out 0.3s;
+            margin-right: -145px;
+
+        }
+
+        span.badge.nabila:hover {
+
+            margin-top: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            color: #0F345E;
+            /*background-color: white;*/
+            background-color: #0F345E;
+            border-radius: 0px;
+            margin-bottom: 21px;
+            border:  1px solid #0F345E ;
+            cursor: pointer;
+
+            box-shadow: inset 260px 0 0 0 white;
+            margin-right: -145px;
+
+
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <!-- tombol ke atas -->
+    <a href="#" class="ignielToTop" title="Back to Top"></a>
+    <!-- ------ -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header" style="padding-top: 5px; padding-bottom: 5px;">
+            <img src="gambar/logo.png" alt="" width="150px" >
+          </div>
+          <ul class="nav navbar-nav" style="align-items: right;">
+
+            <li ><a href="#home" class="atas">Home</a></li>
+            <!-- <li><a href="#" class="atas">All Advantages</a></li> -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">All Parts <span class="caret"></span></a>
+                 <ul class="dropdown-menu" role="menu">
+                    <li><a href="#all-advantages" class="evo">All Advantages</a></li>
+                    <li><a href="#best-price" class="evo">Best Price</a></li>
+                    <li><a href="#best-performance" class="evo">Best Performance</a></li>
+                    <li><a href="#all-paket-server" class="evo">All Paket Server</a></li>
+                    <li><a href="#location-server" class="evo">Location Server</a></li>
+                    <li><a href="#payment-method" class="evo">Payment Method</a></li>
+                    <li><a href="#main-office" class="evo">Main Office</a></li>
+                    <li><a href="#testimonial" class="evo">Testimonial</a></li>
+                 </ul>
+             </li>
+
+            <li><a href="#" class="atas">About</a></li>
+            <li style="align-items: right;"><a href="#" class="atas">Contact Us</a></li>
+
+            
+             
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><button class="login1" style="padding-top: 11px; margin-top: 10px; color: white; font-size: 10px; padding-bottom: 11px; padding-left: 27px; padding-right: 27px; background-color: #0f345e; border: none; border: 0; border-radius: 25px;"><b>Sign Up</b></button></li>
+            <li><button class="login2" style="padding-top: 11px; margin-left: 10px; margin-top: 10px; color: #0f345e; font-size: 10px; padding-bottom: 11px; padding-left: 27px; padding-right: 27px; background-color: white; border: none; border: 0; border-radius: 25px;"><b>Login</b></button></li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container" style="margin-top: 85px;" id="home">
+        <div class="row">
+            <div class="col-md-6">
+                <div><p class="welcome">OPTIMAL YOUR <b style="color: #0f345e;">WEBSITE</b> <br> WITHOUT <b style="color: #0f345e;">FAST</b> <br> <b style="color: #0f345e;">SERVER</b></p></div>
+                <br>
+                <div><p>In here !. you can buy the fast server to <br> optimalized your website</p></div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div style="margin-top: 20px;"><img src="gambar/checklist.png"  width="30" alt="gambar">Savety Server</div>
+                        <div style="margin-top: 10px;"><img src="gambar/checklist.png"  width="30" alt="gambar">Protect Server</div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div style="margin-top: 20px;"><img src="gambar/checklist.png"  width="30" alt="gambar">Fast Server</div>
+                        <div style="margin-top: 10px;"><img src="gambar/checklist.png"  width="30" alt="gambar">Friendly Price</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="superhero">
+                            <span class="badge alpin"><h4 class="">Buy Now!</h4></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div style="margin-top: 40px; margin-left: 5px;">
+                            <div><h4><b>CALL US</b></h4></div>
+                            <div><h4><b>+62 8582-6658-289</b></h4></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- <div class="justice" style="text-align: right;">
+                    <button style="padding-top: 11px; padding-bottom: 11px; padding-left: 27px; padding-right: 27px; background-color: #0f345e; border: none; border: 0; border-radius: 7px;"><b>Sign Up</b></button>
+                </div> -->
+                <div class="iklan">
+                    <img src="gambar/samurai.png" width="700px" alt="" style="z-index: -1; margin-left: -190px; position: relative; margin-top: -30px;">
+                </div>
+            </div>
+        </div>
+        <div class="promosi" style="text-align: center;" id="all-advantages">
+            <button style="padding-top: 11px; padding-bottom: 11px; padding-left: 27px; padding-right: 27px; background-color: #0f345e; border: none; border: 0; border-radius: 50px;"><b>our aminities</b></button>
+        </div>
+        <div style="text-align: center; margin-top: -10px;">
+            <h3><b>All Advantages</b></h3>
+        </div>
+        <center>
+            <div class="row" style="margin-top: 60px;">
+                <div class="col-md-3">
+                    <div class="panel panel-default" style="border-radius: 10px; padding-top: 30px; background-color: #FBF9F9; border: 0;">
+                        <button style="background-color: white; border-radius: 50px; border: 0;">
+                        <img src="gambar/shield.png" width="80px" alt="" style="padding: 10px;">
+                        </button>
+                        <h5 style="padding-top: 15px; padding-bottom: 70px;"><b>Savety Server</b></h5>
+                        <button style="border: 0; background-color: white; border-radius: 50px; position: absolute; margin-left: -20px; margin-top: -27px;"><img src="gambar/right.png" alt="" width="25px" style="padding-top: 5px; padding-bottom: 5px;"></button>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default" style="border-radius: 10px; padding-top: 30px; background-color: #FBF9F9; border: 0;">
+                        <button style="background-color: white; border-radius: 50px; border: 0;">
+                        <img src="gambar/hacker.png" width="80px" alt="" style="padding-right: 5px; padding-left: 5px; padding-top: 10px; padding-bottom: 10px;">
+                        </button>
+                        <h5 style="padding-top: 15px; padding-bottom: 70px;"><b>Protect Server</b></h5>
+                        <button style="border: 0; background-color: white; border-radius: 50px; position: absolute; margin-left: -20px; margin-top: -27px;"><img src="gambar/right.png" alt="" width="25px" style="padding-top: 5px; padding-bottom: 5px;"></button>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default" style="border-radius: 10px; padding-top: 30px; background-color: #FBF9F9; border: 0;">
+                        <button style="background-color: white; border-radius: 50px; border: 0;">
+                        <img src="gambar/right-arrow.png" width="80px" alt="" style="padding-right: 10px; padding-left: 10px; padding-top: 16px; padding-bottom: 16px; border-radius: 5px;">
+                        </button>
+                        <h5 style="padding-top: 15px; padding-bottom: 70px;"><b>Fast Server</b></h5>
+                        <button style="border: 0; background-color: white; border-radius: 50px; position: absolute; margin-left: -20px; margin-top: -27px;"><img src="gambar/right.png" alt="" width="25px" style="padding-top: 5px; padding-bottom: 5px;"></button>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default" style="border-radius: 10px; padding-top: 30px; background-color: #FBF9F9; border: 0;">
+                        <button style="background-color: white; border-radius: 50px; border: 0;">
+                        <img src="gambar/hand-shake.png" width="80px" alt="" style="padding-right: 5px; padding-left: 5px; padding-top: 10px; padding-bottom: 10px;">
+                        </button>
+                        <h5 style="padding-top: 15px; padding-bottom: 70px;"><b>Friendly Server</b></h5>
+                        <button style="border: 0; background-color: white; border-radius: 50px; position: absolute; margin-left: -20px; margin-top: -27px;"><img src="gambar/right.png" alt="" width="25px" style="padding-top: 5px; padding-bottom: 5px;"></button>
+                      </div>
+                </div>
+            </div>
+            <div class="coba" style="text-align: center;" id="best-price">
+                <button style="padding-top: 11px; padding-bottom: 11px; padding-left: 27px; padding-right: 27px; background-color: #0f345e; border: none; border: 0; border-radius: 50px;"><b>our price</b></button>
+            </div>
+            <div style="text-align: center; margin-top: -10px; margin-bottom: 70px;">
+                <h3><b>Best Price</b></h3>
+            </div>
+        </center>
+        <div class="row">
+            <div class="col-sm-6">
+                <div>
+                    <img src="gambar/best-price.webp" alt="" width="470px" style="margin-top: -30px;" class="price">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div><h3><b>Low Cost, Great Quality</b></h3></div>
+                <br>
+                <div><p>In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website.</p></div>
+            </div>
+        </div>
+        <div class="coba" style="text-align: center;" id="best-performance">
+            <button style="padding-top: 11px; padding-bottom: 11px; padding-left: 27px; padding-right: 27px; background-color: #0f345e; border: none; border: 0; border-radius: 50px;"><b>our services</b></button>
+        </div>
+        <div style="text-align: center; margin-top: -10px; margin-bottom: 70px;">
+            <h3><b>Best Performance</b></h3>
+        </div>
+        <div class="row" style="margin-bottom: 80px;">
+            <div class="col-sm-6">
+                <div><h3><b>Priority of Speed and Safety</b></h3></div>
+                <br>
+                <div><p>In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website In here !. you can buy the.</p></div>
+            </div>
+            <div class="col-sm-6">
+                <div class="price">
+                    <img src="gambar/best-performance.webp" alt="" width="470px">
+                    <img src="gambar/logo.png" alt="" width="75px" style="position: absolute; margin-left: -420px; margin-top: 90px; background-color: #f4fafe;">
+                    <img src="gambar/orang.jpeg" alt="" width="35px" style="border-radius: 50px; position: absolute; margin-left: -407px; margin-top: 29px;">
+                </div>
+            </div>
+        </div>
+
+
+        
+
+
+    </div>
+
+    <div class="container-fluid" style="background-color: rgb(243, 243, 243); position: ;" id="all-paket-server">
+        <div class="container">
+            <div class="paketan" style="text-align: center;">
+                <button style="padding-top: 11px; padding-bottom: 11px; padding-left: 27px; padding-right: 27px; background-color: #0f345e; border: none; border: 0; border-radius: 50px;"><b>our services</b></button>
+            </div>
+            <div style="text-align: center; margin-top: -10px; margin-bottom: 70px;">
+                <h3><b>All Paket Server</b></h3>
+            </div>
+            <div class="row">
+                <center>
+                    <div class="col-md-4" style="margin-bottom: 80px;">
+                        <div class="panel panel-primary">
+                            <img src="gambar/icn_domain.webp" alt="" width="240px">
+                            <h5><b>Premium Paket</b></h5>
+                            <p style="margin-top: 60px;">Starting Price</p>
+                            <h4><b>$499</b>/Month</h4>
+                            <button class="poin" style="padding-top: 11px; padding-bottom: 11px; padding-left: 27px; padding-right: 27px; background-color: #0f345e; border: none; border: 0; border-radius: 50px; color: white; margin-top: 35px; margin-bottom: 20px;"><b>Detail Info</b></button>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="margin-bottom: 80px;">
+                        <div class="panel panel-primary">
+                            <img src="gambar/icn_cloud.webp" alt="" width="275px">
+                            <h5><b>Expert Paket</b></h5>
+                            <p style="margin-top: 60px;">Starting Price</p>
+                            <h4><b>$899</b>/Month</h4>
+                            <button class="poin" style="padding-top: 11px; padding-bottom: 11px; padding-left: 27px; padding-right: 27px; background-color: #0f345e; border: none; border: 0; border-radius: 50px; color: white; margin-top: 35px; margin-bottom: 20px;"><b>Detail Info</b></button>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="margin-bottom: 80px;">
+                        <div class="panel panel-primary">
+                            <img src="gambar/icn_hosting.webp" alt="" width="260px">
+                            <h5><b>Profesional Paket</b></h5>
+                            <p style="margin-top: 60px;">Starting Price</p>
+                            <h4><b>$1.199</b>/Month</h4>
+                            <button class="poin" style="padding-top: 11px; padding-bottom: 11px; padding-left: 27px; padding-right: 27px; background-color: #0f345e; border: none; border: 0; border-radius: 50px; color: white; margin-top: 35px; margin-bottom: 20px;"><b>Detail Info</b></button>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 30px; margin-bottom: 100px;" id="location-server">
+        <div class="paketan" style="text-align: center;">
+            <button style="padding-top: 11px; padding-bottom: 11px; padding-left: 27px; padding-right: 27px; background-color: #0f345e; border: none; border: 0; border-radius: 50px;"><b>our location</b></button>
+        </div>
+        <div style="text-align: center; margin-top: -10px; margin-bottom: 70px;">
+            <h3><b>Location Server</b></h3>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <img class="map" src="gambar/servermaps.webp" alt="">
+            </div>
+            <div class="col-sm-6">
+                <div><h3><b>Data Center Location</b></h3></div>
+                <br>
+                <div><p>In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website.</p></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- payment method -->
+    <div class="container" style="margin-top: 30px; margin-bottom: 200px;" id="payment-method">
+        <div class="paketan" style="text-align: center;">
+            <button style="padding-top: 11px; padding-bottom: 11px; padding-left: 27px; padding-right: 27px; background-color: #0f345e; border: none; border: 0; border-radius: 50px;"><b>our method</b></button>
+        </div>
+        <div style="text-align: center; margin-top: -10px; margin-bottom: 70px;">
+            <h3><b>Payment Method</b></h3>
+        </div>
+        <div class="col-md-12">
+            <center>
+                <img src="gambar/footer-payment-logo-new.svg" width="1000px" alt="">
+            </center>
+        </div>
+    </div>
+    <!-- 190,000+ Customers choose Booster because ... -->
+    <div class="container-fluid" style="background-color: #0f345e;">
+        <div class="container">
+            <div class="col-md-12">
+                <center>
+                    <h1 style="color:white; margin-bottom: 80px; margin-top: 40px;">190,000+ Customers choose Booster because ...</h1>
+                </center>
+                    <div class="row" style="margin-bottom: 100px;">
+                        <center>
+                            <div class="col-md-1">
+                                &nbsp
+                            </div>
+                            <div class="col-md-2">
+                                <img src="gambar/1.webp" alt="">
+                                <br>
+                                <br>
+                                <p style="color: white;">ICANN Accredited Registrar</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="gambar/dua.webp" alt="">
+                                <br>
+                                <br>
+                                <p style="color: white;">Google Cloud Partner</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="gambar/tiga.webp" alt="">
+                                <br>
+                                <br>
+                                <p style="color: white;">cPanel NOC Partner</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="gambar/empat.webp" alt="">
+                                <br>
+                                <br>
+                                <p style="color: white;">Alibaba Cloud Partner</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="gambar/lima.webp" alt="">
+                                <br>
+                                <br>
+                                <p style="color: white;">Litespeed Hosting Partner</p>
+                            </div>
+                            <div class="col-md-1">
+                                &nbsp
+                            </div>
+                        </center>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 50px; margin-bottom: 30px;" id="main-office">
+        <div class="paketan" style="text-align: center;">
+            <button style="padding-top: 11px; padding-bottom: 11px; padding-left: 27px; padding-right: 27px; background-color: #0f345e; border: none; border: 0; border-radius: 50px;"><b>our location</b></button>
+        </div>
+        <div style="text-align: center; margin-top: -10px; margin-bottom: 70px;">
+            <h3><b>Main Office</b></h3>
+        </div>
+        <div class="col-md-12">
+            <iframe class="layang" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5820.4505871012125!2d111.41462756368003!3d-7.9527180169930665!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1662268054886!5m2!1sid!2sid" width="1100" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="container" id="testimonial">
+        <div class="paketan" style="text-align: center;">
+            <button style="padding-top: 11px; padding-bottom: 11px; padding-left: 27px; padding-right: 27px; background-color: #0f345e; border: none; border: 0; border-radius: 50px;"><b>our testimonial</b></button>
+        </div>
+        <div style="text-align: center; margin-top: -10px; margin-bottom: 70px;">
+            <h3><b>Testimonial</b></h3>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="row">
+
+
+
+                <div class="owl-carousel owl-theme slide_card" id="owl-carousel-topslide">
+
+                <div class="col-md-12">
+                    <div class="autoplay">
+                    <div class="Tpanel-primary" style="border: 0.5px solid gray !important; padding: 20px;">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <img src="gambar/orang.jpeg" width="40" style="border-radius: 50%;" alt=""> &nbsp 
+                            </div>
+                            <div class="col-sm-10">
+                                <b>Agus Hermawan</b>
+                            <p style="font-size: 11px;">Mentor Assistant | 29 June 2022 |</p> 
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    </div>
+                </div>
+
+
+                 <div class="col-md-12">
+                    <div class="autoplay">
+                    <div class="Tpanel-primary" style="border: 0.5px solid gray !important; padding: 20px;">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <img src="gambar/orang.jpeg" width="40" style="border-radius: 50%;"> &nbsp 
+                            </div>
+                            <div class="col-sm-10">
+                                <b>Teguh Hermawan</b>
+                            <p style="font-size: 11px;">Mentor Assistant | 29 June 2022 |</p> 
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="autoplay">
+                    <div class="Tpanel-primary" style="border: 0.5px solid gray !important; padding: 20px;">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <img src="gambar/orang.jpeg" width="40" style="border-radius: 50%;"> &nbsp 
+                            </div>
+                            <div class="col-sm-10">
+                                <b>Teguh Hermawan</b>
+                            <p style="font-size: 11px;">Mentor Assistant | 29 June 2022 |</p> 
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="autoplay">
+                    <div class="Tpanel-primary" style="border: 0.5px solid gray !important; padding: 20px;">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <img src="gambar/orang.jpeg" width="40" style="border-radius: 50%;"> &nbsp 
+                            </div>
+                            <div class="col-sm-10">
+                                <b>Teguh Hermawan</b>
+                            <p style="font-size: 11px;">Mentor Assistant | 29 June 2022 |</p> 
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="autoplay">
+                    <div class="Tpanel-primary" style="border: 0.5px solid gray !important; padding: 20px;">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <img src="gambar/orang.jpeg" width="40" style="border-radius: 50%;"> &nbsp 
+                            </div>
+                            <div class="col-sm-10">
+                                <b>Teguh Hermawan</b>
+                            <p style="font-size: 11px;">Mentor Assistant | 29 June 2022 |</p> 
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-12">
+                    <div class="autoplay">
+                    <div class="Tpanel-primary" style="border: 0.5px solid gray !important; padding: 20px;">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <img src="gambar/orang.jpeg" width="40" style="border-radius: 50%;"> &nbsp 
+                            </div>
+                            <div class="col-sm-10">
+                                <b>Bayu Hermawan</b>
+                            <p style="font-size: 11px;">Mentor Assistant | 29 June 2022 |</p> 
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-12">
+                    <div class="autoplay">
+                    <div class="Tpanel-primary" style="border: 0.5px solid gray !important; padding: 20px;">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <img src="gambar/orang.jpeg" width="40" style="border-radius: 50%;"> &nbsp 
+                            </div>
+                            <div class="col-sm-10">
+                                <b>Roy Hermawan</b>
+                            <p style="font-size: 11px;">Mentor Assistant | 29 June 2022 |</p> 
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+                            <div class="container maze">
+                                <div class="row ulin">
+                                    <div class="col-xs-12 col-sm-12 col-md-8 benny">
+                                        <h4 class="bubur">Payment Method</h4>
+
+                                        <h4 class="rianti">In here !. you can buy the fast server</h4>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-4">
+                                        <center><span class="badge nabila"><h4 class="">Explore Properties <i class="fa fa-arrow-right"></i></h4></span></center>
+                                    </div>
+                                </div>
+                            </div>
+
+
+    <div class="container-fluid" style="background-color: #0f345e; padding-top: 160px; margin-top: 150px;">
+        <div class="container">
+            <div class="col-md-12">
+            <h4 style="color: white; line-height: 10px;">In here !. you can buy the fast server</h4>
+            <h4 style="color: white;">to optimalized your website</h4>
+            <hr style="border: 1.5px solid white; margin-top: 70px;">
+            <img src="gambar/logo2.png" alt="" width="190px" style="margin-top: 30px; margin-bottom: 20px;">
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-sm-8">
+                               <p style="color: white;">
+                            In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website In here !. you can buy the fast server to optimalized your website
+                        </p>
+                            </div>
+                            <div class="col-sm-4">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p style="color: white;">About</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <p style="color: white;">Office</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p style="color: white;"><b>Official Account</b></p>
+                            </div>
+                            <div class="col-sm-3">
+                                <p style="color: white;">Contact</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <p style="color: white;">Handbook</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-1">
+                                    <img src="assets_boy/instagram.png">
+                                </div>
+                                <div class="col-sm-1">
+                                    <img src="assets_boy/facebook.png">
+                                </div>
+                                <div class="col-sm-1">
+                                    <img src="assets_boy/twitter.png">
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <p style="color: white;">Career</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <p style="color: white;">Testimonials</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p style="color: white;">&nbsp</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p style="color: white;"><b>Help & Support</b></p>
+                            </div>
+
+
+                            <div class="col-sm-12" style="margin-top: 20px;">
+                            <p style="color: white;"><b>Newsletter</b></p>
+                        </div>
+
+                        <form>
+  <div class="form-row align-items-center">
+    <div class="col-sm-9"><!-- 
+      <label class="sr-only" for="inlineFormInput">Name</label> -->
+      <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Type email address here" style="border-radius: 50px;">
+    </div>
+
+    <div class="col-auto">
+      <button type="submit" class="btn mb-2" style="background-color: #FFA800; color: white; border-radius: 50px;">Subscribe</button>
+    </div>
+  </div>
+</form>
+
+                        </div>\
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        function slide_top(){
+            $('.slide_card').owlCarousel({
+                items:3,
+                loop:true,
+                margin:0,
+                autoplay:true,
+                autoplayTimeout:7000,
+                autoplayHoverPause:false
+            })
+        }
+
+                            // slide_img
+                            function slide_img(){
+                                $('.slide_img').owlCarousel({
+                                    loop:true,
+                                    margin:0,
+                                    nav:true,
+                                    responsive:{
+                                        0:{
+                                            items:1
+                                        },
+                                        600:{
+                                            items:3
+                                        },
+                                        1000:{
+                                            items:2
+                                        }
+                                    }
+                                });
+                            }
+
+                            // load fucntion ready
+                            $(document).ready(function() {
+                                slide_img();
+                                slide_top();
+                            })
+                        </script>
+
+
+
+
+</body>
+</html>
